@@ -44,10 +44,10 @@ func main() {
     fmt.Println(a.Abs())
 }
 ```
-####从语法上看，Interface定义了一个或一组[method](http://blog.csdn.net/uudou/article/details/52412831)，这些method只有函数签名，没有具体的实现代码。若某个数据类型实现了Interface中定义的那些被称为"method"的函数，则称这些数据类型实现了interface。上面的代码中，第8-10行是通过type语法声明了一个名为Abser的interface类型（Go中约定的interface类型名通常取其内部声明的method名的er形式）。第12-19行通过type语法声明了MyFloat类型且为该类型定义了名为Abs()的method。根据上面的解释，Abs()是interface类型Abser定义的方法，而MyFloat实现了该方法，所以，MyFloat实现了Abser接口。
+#### 从语法上看，Interface定义了一个或一组[method](http://blog.csdn.net/uudou/article/details/52412831)，这些method只有函数签名，没有具体的实现代码。若某个数据类型实现了Interface中定义的那些被称为"method"的函数，则称这些数据类型实现了interface。上面的代码中，第8-10行是通过type语法声明了一个名为Abser的interface类型（Go中约定的interface类型名通常取其内部声明的method名的er形式）。第12-19行通过type语法声明了MyFloat类型且为该类型定义了名为Abs()的method。根据上面的解释，Abs()是interface类型Abser定义的方法，而MyFloat实现了该方法，所以，MyFloat实现了Abser接口。
 
 ---
-####Interface类型的更通用定义可归纳如下：
+#### Interface类型的更通用定义可归纳如下：
 ```golang
 type Namer interface {
     Method1(param_list) return_type
@@ -63,7 +63,7 @@ type Namer interface {
 
 ---
 #### golang不支持完整的面向对象思想，没有继承，多态依赖接口实现。golang只能模拟继承，其本质是组合，但是golang语言提供了一些语法糖使其看起来达到了继承的效果。golang的设计理念大道至简，传统的继承概念在golang中已经显得不是那么必要，golang通过接口去实现多态。interface类型不包含任何数据成员。interface类型进行转换的时候，默认返回的是临时对象，所以如果需要对原始对象进行修改，需要获取原始对象的指针。下面是一个稍微复杂点的例子。
-```golang
+```js
 type IPizzaCooker interface {
     Prepare(*Pizza)
     Bake(*Pizza)
