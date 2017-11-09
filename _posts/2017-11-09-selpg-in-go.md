@@ -417,7 +417,8 @@ Then here are some commands to test the selpg.
 
 
 ## 代码：
-```go
+
+``` go
 package main
 
 import (
@@ -594,7 +595,5 @@ func main() {
 	ProcessArgs(&args)
 	ProcessInput(&args)
 }
-
-
 ```
 ##  [我的Github](https://github.com/Tomy-Lee/selpg)
