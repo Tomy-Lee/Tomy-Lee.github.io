@@ -60,7 +60,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: github.com/Tomy-Lee
 
 
 
@@ -69,9 +69,4 @@ sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不甘堕落，不思进取"
 sidebar-avatar: /img/20171005_114701.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
