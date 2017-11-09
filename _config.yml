@@ -8,7 +8,7 @@ keyword: ""
 url: "https://tomy-lee.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
-favicon: "img/favicon.ico"
+favicon: img/favicon.ico
 
 # SNS settings
 RSS: false
