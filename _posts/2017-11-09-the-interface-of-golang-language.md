@@ -3,12 +3,12 @@ layout:     post
 title:      "Go语言乱谈之Interface"
 subtitle:   "Go编程语言学习笔记"
 date:       2017-11-09
-author:     "tomylee"
-header-img: "img/home-bg-o.jpg"
+author:     "tomylee"
+header-img: ""
 catalog: true
 tags:
-    - Golang
-    - 学习笔记
+    - go
+    - 读书笔记
 ---
 
 #### Go不是典型的[OO语言](https://baike.so.com/doc/6146835-6360018.html)，它在语法上不支持类和继承的概念。但是Go语言引入了一种新类型—Interface，它在效果上实现了类似于C++的“多态“。Go语言官网对于Interface类型的描述是：
