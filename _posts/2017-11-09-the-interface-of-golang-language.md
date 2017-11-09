@@ -10,6 +10,7 @@ tags:
     - Golang
     - 学习笔记
 ---
+
 #### Go不是典型的[OO语言](https://baike.so.com/doc/6146835-6360018.html)，它在语法上不支持类和继承的概念。但是Go语言引入了一种新类型—Interface，它在效果上实现了类似于C++的“多态“。Go语言官网对于Interface类型的描述是：
 >An interface type specifies a method set called its interface. A variable of interface type can store a value of any type with a method set that is any superset of the interface. Such a type is said to implement the interface. The value of an uninitialized variable of interface type is nil.
 >一个 interface 类型定义了一个 方法集 作为其 接口。 interface 类型的变量可以保存含有属于这个 interface 类型方法集超集的任何类型的值，这时我们就说这个类型 实现 了这个 接口。未被初始化的 interface 类型变量的零值为 nil。
