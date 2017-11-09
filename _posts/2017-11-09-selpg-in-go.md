@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     使用Go语言开发selpg命令行程序
+title: 使用Go语言开发selpg命令行程序
 subtitle:  Go语言编程
 date:       2017-11-09
 author:     "tomylee"
