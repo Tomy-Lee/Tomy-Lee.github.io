@@ -113,4 +113,4 @@ func main() {
 ```
 
 ---
-关于interface的一篇文章：http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go
+关于interface的一篇文章：[How to use interfaces in Go](http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
