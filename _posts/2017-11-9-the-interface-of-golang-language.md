@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Go语言乱谈之Interface
+title: Go语言乱谈之Interface
 subtitle:   Go编程语言学习笔记
 date:       2017-11-09
 author:     "tomylee"
