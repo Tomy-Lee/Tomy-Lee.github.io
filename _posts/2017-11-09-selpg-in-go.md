@@ -416,7 +416,7 @@ Then here are some commands to test the selpg.
 
 ## 代码：
 
-```go
+```js
 package main
 
 import (
