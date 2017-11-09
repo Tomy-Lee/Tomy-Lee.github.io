@@ -53,7 +53,8 @@ netease_comment: false
 
 
 
-
+# Baidu Analytics
+ba_track_id: 6858702ae375439b53fbacfb58361115
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: tomy-lee.github.io
