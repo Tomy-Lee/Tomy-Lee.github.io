@@ -49,7 +49,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Netease setttings
-netease_comment: true
+netease_comment: false
 
 # For gitment
 gitment: true
