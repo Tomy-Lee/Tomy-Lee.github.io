@@ -66,7 +66,7 @@ ba_track_id: 6858702ae375439b53fbacfb58361115
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不甘堕落，不思进取"
-sidebar-avatar: /img/20171005_114701.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/20171003_111314.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
