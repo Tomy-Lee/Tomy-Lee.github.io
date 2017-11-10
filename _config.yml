@@ -53,7 +53,7 @@ netease_comment: false
 
 # For gitment
 gitment: true
-gitment-repo: comments
+gitment-repo: Tomy-Lee.github.io
 gitment-client-id: 4abc5e10d70c776bf952
 gitment-client-secret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
