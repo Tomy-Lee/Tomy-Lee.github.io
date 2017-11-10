@@ -79,9 +79,6 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
         title: "My CSDN Blog",
         href: "http://blog.csdn.net/qq_33454112"
     },{
