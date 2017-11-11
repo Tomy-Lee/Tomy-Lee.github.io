@@ -7,7 +7,7 @@ author:     "tomylee"
 header-img: "img/home-bg-o.jpg"
 catalog: true
 tags:
-    - go
+    - Golang
 ---
 
 
