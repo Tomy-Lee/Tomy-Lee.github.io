@@ -38,7 +38,7 @@ tags:
 #### 对象树如下：
 ![这里写图片描述](http://img.blog.csdn.net/20170424203534714?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 #### 控制动作的AnimationLegacy部分如下：
-```
+```c#
 using UnityEngine;
 using System.Collections;
 using Com.mygame;
