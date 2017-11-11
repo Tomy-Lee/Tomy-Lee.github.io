@@ -73,7 +73,7 @@ extnValue：表示这个拓展元素的值，字符串类型
 #### 2.9主题目录属性
 指出证书拥有者的一些列属性。可以使用这一项来传递访问控制信息
      
-####X.509文档：[RFC5280](https://www.rfc-editor.org/rfc/rfc5280.txt)
+#### X.509文档：[RFC5280](https://www.rfc-editor.org/rfc/rfc5280.txt)
 Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
 
 ---
