@@ -1,6 +1,4 @@
 language: node_js
 node_js:
-  - "4.2.3"
-before_script:
-  - npm install grunt-cli -g
-install: npm install
+  - "iojs"
+  - "7"
