@@ -65,7 +65,7 @@ ba_track_id: 6858702ae375439b53fbacfb58361115
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "不甘堕落，不思进取<br><br>我 回头再望某年<br>像失色照片 乍现眼前M<br>这个茫然困惑少年<br>愿一生以歌<br>投入每天永不变"
+sidebar-about-description: "不甘堕落，不思进取<br><br>我 回头再望某年<br>像失色照片 乍现眼前<br>这个茫然困惑少年<br>愿一生以歌<br>投入每天永不变"
 sidebar-avatar: /img/20171003_1113141.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
