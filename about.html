@@ -64,11 +64,14 @@ multilingual: true
 <script type="text/javascript">
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
     function onLanChange(index){
         if(index == 1){
+            $select.selectedIndex = 1;
             $zh.style.display = "block";
             $en.style.display = "none";
         }else{
+            $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
         }
