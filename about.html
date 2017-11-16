@@ -66,9 +66,11 @@ multilingual: true
     var $en = document.querySelector(".en");
     function onLanChange(index){
         if(index == 1){
+            alert($zh.selectedIndex);
             $zh.style.display = "block";
             $en.style.display = "none";
         }else{
+            alert($en.selectedIndex);
             $en.style.display = "block";
             $zh.style.display = "none";
         }
