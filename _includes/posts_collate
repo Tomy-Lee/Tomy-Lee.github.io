@@ -29,7 +29,7 @@ Usage:
   <ul>
 {% endif %}
 
-<li><span>{{ post.date | date: "%Y年%-m月%-d日" }}</span> &raquo; <a href="{{ post.url }}" style="color:#ADEAEA">{{ post.title }}</a></li>
+<li><span>{{ post.date | date: "%Y年%-m月%-d日" }}</span> &raquo; <a href="{{ post.url }}" style="color:#007FFF">{{ post.title }}</a></li>
 
 {% if forloop.last %}
   </ul>
