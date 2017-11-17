@@ -25,7 +25,7 @@ Usage:
 
 {% if forloop.first %}
   <h2>{{this_year}}</h2>
-  <h4 style="color:#000022">{{this_month}}</h4>
+  <h4 style="color:#8470FF">{{this_month}}</h4>
   <ul>
 {% endif %}
 
