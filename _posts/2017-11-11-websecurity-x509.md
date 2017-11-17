@@ -2,7 +2,7 @@
 layout:     post
 title:      "X.509证书工作原理及示例"
 subtitle:   "web安全专题"
-date:       2017-11-11
+date:       2017-11-09
 author:     "tomylee"
 header-img: "img/1217913296033.jpg"
 catalog: true
