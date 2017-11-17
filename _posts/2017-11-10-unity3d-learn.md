@@ -2,7 +2,7 @@
 layout:     post
 title:      "动画案例及设计模式研究"
 subtitle:   "Unity 3D学习记录"
-date:       2017-4-24
+date:       2016-4-24
 author:     "tomylee"
 header-img: "img/contact-bg.jpg"
 catalog: true
