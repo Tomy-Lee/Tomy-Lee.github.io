@@ -291,7 +291,14 @@ button.paper-button {
   box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21);
 }
 /** Card **/
-
+.card {
+  background: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 16px;
+  border-radius: 2px;
+}
 body {
   /* Hux learn from
      *     TypeIsBeautiful,
