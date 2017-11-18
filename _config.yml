@@ -88,6 +88,9 @@ friends: [
     },{
         title: "Leegal Blog",
         href: "http://blog.csdn.net/lyy_g"
+    },{
+        title: "Hux Blog",
+        href: "https://huangxuan.me/"
     }
 ]
 
