@@ -47,9 +47,14 @@ layout: default
     </div>
 </header>
 
+{% if page.xiamimusic-id %}
+<embed src="http://www.xiami.com/widget/{{ page.xiamimusic-id }}/singlePlayer.swf" type="application/x-shockwave-flash" width="300" height="50" wmode="transparent"></embed>
+{% endif %}
+
 {% if page.music-id %}
  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id={{ page.music-id }}&auto=1&height=66"></iframe>
 {% endif %}
+
 <!-- Post Content -->
 <article>
     <div class="container">
