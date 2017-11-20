@@ -22,7 +22,9 @@ tags:
 
 ## Reference
 1.[开发 Linux 命令行实用程序](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html)
+
 2.[Linux命令行程序设计](https://wenku.baidu.com/view/c7cf91ee5ef7ba0d4a733b58.html)
+
 3.[Using Python to create UNIX command line tools](https://www.ibm.com/developerworks/aix/library/au-pythocli/index.html)
 
 ## 命令行准则
