@@ -82,9 +82,11 @@
                     {% if site.mail %}
           <!-- Email -->
           <li class="navigation__item_social">
-            <a href="mailto:{{site.social.mail}}" title="Contact me">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <span class="label">Email</span>
+            <a target="_blank" href="mailto:{{site.social.mail}}" title="Contact me">
+             <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-mail fa-stack-1x fa-inverse"></i>
+                   </span>
             </a>
           </li>
           {% endif %}
