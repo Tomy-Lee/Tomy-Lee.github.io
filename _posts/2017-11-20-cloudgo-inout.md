@@ -70,6 +70,7 @@ func initRoutes(mx *mux.Router, formatter *render.Render) {
     webRoot := os.Getenv("WEBROOT")
     if len(webRoot) == 0 {
         if root, err := os.Getwd(); err != nil {
+        
             panic("Could not retrive working directory")
         } else {
             webRoot = root
@@ -218,6 +219,7 @@ func initRoutes(mx *mux.Router, formatter *render.Render) {
     webRoot := os.Getenv("WEBROOT")
     if len(webRoot) == 0 {
         if root, err := os.Getwd(); err != nil {
+        
             panic("Could not retrive working directory")
         } else {
             webRoot = root
