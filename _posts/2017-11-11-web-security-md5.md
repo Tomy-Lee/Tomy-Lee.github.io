@@ -146,16 +146,24 @@ II(b ,c ,d ,a ,M9 ,21 ,0xeb86d391 )
 
 ```c++
 #include<iostream>
+
 #include<string>
+
 #include<memory.h>
+
 #include <fstream>
+
 using namespace std;
 
 // 定义 F G H I  
 #define shift(x, n) (((x) << (n)) | ((x) >> (32 - (n)))) // 右移的时候，高位要补0，而不是补充符号位
+
 #define F(x, y, z) (((x) & (y)) | ((~x) & (z)))
+
 #define G(x, y, z) (((x) & (z)) | ((y) & (~z)))
+
 #define H(x, y, z) ((x) ^ (y) ^ (z))
+
 #define I(x, y, z) ((y) ^ ((x) | (~z)))
 
 char sstr[500];
@@ -169,18 +177,22 @@ string convertToHex(int num) {
 
 	for (int i = 0; i < 4; i++) {
 		// 一个小块32bit，每次处理一个字节，所以循环4次 
+		
 		temp = "";
+		
 		/*
 		* 1 << 8 = 2^8 = 256，对256取模，即取32bit的低8位
 		* &0xff 即把 除低8位外的所有位都置0，得低8位的值
 		* 逆序处理每个字节，因存储方式和显示方式相反(大小端关系)
 		*/
+		
 		hexNum = ((num >> i * 8) % (1 << 8)) & 0xff;
 
 		/*
 		* 因为max(hexNum) 255，故转换为hex只需要两次循环即可
 		* tmp.insert(0, 1, str16[hexNum % 16]) 意为 在tmp的第0个位置插入一个str[hexNum%16]
 		*/
+		
 		for (int j = 0; j < 2; j++) {
 			temp.insert(0, 1, str16[hexNum % 16]);
 			hexNum = hexNum / 16;
@@ -193,6 +205,7 @@ string convertToHex(int num) {
 
 string getMD5(string str) {
 	// 一种移位的方法，参考自 百度百科(MD5) 
+	
 	const unsigned s[64] = {
 		7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,
 		5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20,
@@ -201,6 +214,7 @@ string getMD5(string str) {
 	};
 
 	//  ti 是 4294967296*abs(sin(i))的整数部分(1≤i≤64, 2^32=4294967296)
+	
 	const unsigned k[64] = {
 		0xd76aa478, 0xe8c7b756, 0x242070db, 0xc1bdceee,
 		0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501,
@@ -221,26 +235,32 @@ string getMD5(string str) {
 	};
 
 	// 初始化变量 链接变量 
+	
 	unsigned int A = 0x67452301;
 	unsigned int B = 0xefcdab89;
 	unsigned int C = 0x98badcfe;
 	unsigned int D = 0x10325476;
 
 	int strLength = str.length();
+	
 	/*
 	* 填充：遵循 bit lengths = 448 (mod 512)
 	* 在原始str后，填充一个1和无数个0，直至满足上面一个条件
 	* +8 是因为最后的64bit是用于放置str长度信息
 	* +1 是因为至少有一个大块存放512bits
 	*/
+	
 	unsigned int blockNum = ((strLength + 8) / 64) + 1; // 计算需要多少个大块
+	
 	/*
 	* 填充后的字符串长度为512bits，分为16个小块，每小块32bits
 	*/
+	
 	unsigned int *strByte = new unsigned int[blockNum * 16];
 	memset(strByte, 0, sizeof(strByte) * blockNum * 16);
 
 	for (unsigned int i = 0; i < strLength; i++) {
+	
 		/*
 		* 传入的str，其中str[i]表示一个char = 8 bits
 		* 而strByte[i]的大小为32bits
@@ -248,6 +268,7 @@ string getMD5(string str) {
 		* 0>>2  1>>2  2>>2  3>>2 结果都为0，即前4位都存储在strByte[0]当中
 		* << ((i%4)*8) 是实现从低到高进行存储
 		*/
+		
 		strByte[i >> 2] |= (str[i]) << ((i % 4) * 8);
 	}
 
@@ -257,11 +278,13 @@ string getMD5(string str) {
 	* (strLength % 4 * 8) 计算0x80应该存在于每个小块的哪个位置
 	* [][][0x80][str.end()] 大端方式
 	*/
+	
 	strByte[strLength >> 2] |= 0x80 << ((strLength % 4) * 8);
 
 	/*
 	* 低64位 存储 信息填充前 信息的长度
 	* str 一个char = 8 bits，故 str.length()*8 即总长度*/
+	
 	strByte[blockNum * 16 - 2] = strLength * 8;
 
 	/*
@@ -309,6 +332,7 @@ string getMD5(string str) {
 	}
 
 	// 将结果进行级联
+	
 	return convertToHex(A) + convertToHex(B) + convertToHex(C) + convertToHex(D);
 }
 
