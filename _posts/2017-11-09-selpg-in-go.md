@@ -474,6 +474,7 @@ func ProcessArgs(args *selpgargs) {
 	}
 
 	if os.Args[1][0] != '-' || os.Args[1][1] != 's' {
+	
 		fmt.Fprintf(os.Stderr, "%s: 1st arg should be -sstart_page\n\n", progname)
 		flag.Usage()
 		os.Exit(1)
@@ -485,6 +486,7 @@ func ProcessArgs(args *selpgargs) {
 	}
 
 	if os.Args[end_index][0] != '-' || os.Args[end_index][1] != 'e' {
+	
 		fmt.Fprintf(os.Stderr, "%s: 2st arg should be -eend_page\n\n", progname)
 		flag.Usage()
 		os.Exit(1)
@@ -504,9 +506,11 @@ func ProcessInput(args *selpgargs) {
 	var cmd *exec.Cmd
 
 	if args.destination != "" {
+	
 		cmd = exec.Command("cat", "-n")
 		stdin, err = cmd.StdinPipe()
 		if err != nil {
+		
 			fmt.Println(err)
 		}
 	} else {
@@ -525,6 +529,7 @@ func ProcessInput(args *selpgargs) {
 			for pageNum := 0; pageNum <= args.end_page; pageNum++ {
 				line, err := reader.ReadString('\f')
 				if err != io.EOF && err != nil {
+				
 					fmt.Println(err)
 					os.Exit(1)
 				}
@@ -538,6 +543,7 @@ func ProcessInput(args *selpgargs) {
 			for {
 				line, _, err := reader.ReadLine()
 				if err != io.EOF && err != nil {
+				
 					fmt.Println(err)
 					os.Exit(1)
 				}
@@ -573,6 +579,7 @@ func ProcessInput(args *selpgargs) {
 	}
 
 	if args.destination != "" {
+	
 		stdin.Close()
 		cmd.Stdout = os.Stdout
 		cmd.Run()
@@ -581,6 +588,7 @@ func ProcessInput(args *selpgargs) {
 
 func printOrWrite(args *selpgargs, line string, stdin io.WriteCloser) {
 	if args.destination != "" {
+	
 		stdin.Write([]byte(line + "\n"))
 	} else {
 		fmt.Println(line)
