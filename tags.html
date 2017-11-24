@@ -4,7 +4,13 @@ layout: default
 description: ""
 header-img: "img/tag-bg.jpg"
 ---
-
+ <script>
+      window.onload=function()
+      {
+      for(var i=0; i<document.links.length; i++)
+      document.links[i].onfocus=function(){this.blur()}
+      }
+      </script>
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
