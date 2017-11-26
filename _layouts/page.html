@@ -181,7 +181,12 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
+				
                         </ul>
+			    	
+				{% if site.email %}
+			    <a href="mailto:{{site.email}}">✉️ {{site.email}}</a>
+                        {% endif %}
                     </div>
                 </section>
 		    
