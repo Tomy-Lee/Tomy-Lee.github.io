@@ -62,8 +62,6 @@ gitment-client-secret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 ba_track_id: 6858702ae375439b53fbacfb58361115
 
 
-
-
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不甘堕落，不思进取<br><br>我 回头再望某年<br>像失色照片 乍现眼前<br>这个茫然困惑少年<br>愿一生以歌<br>投入每天永不变"
@@ -91,6 +89,9 @@ friends: [
     },{
         title: "Hux Blog",
         href: "https://huangxuan.me/"
+    },{
+        title: "pmlpml",
+        href: "http://blog.csdn.net/pmlpml"
     }
 ]
 
