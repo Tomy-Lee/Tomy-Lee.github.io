@@ -25,7 +25,7 @@ Usage:
 
 {% if forloop.first %}
   <h2>{{this_year}}</h2>
-  <h4 style="color:#607B8B">{{this_month}}</h4>
+  <h4 style="color:#607B8B">{{this_month}}{{post.size}}</h4>
   <ul>
 {% endif %}
 
@@ -37,7 +37,7 @@ Usage:
   {% if this_year != next_year %}
     </ul>
     <h2>{{next_year}}</h2>
-    <h4 style="color:#607B8B">{{next_month}}123</h4>
+    <h4 style="color:#607B8B">{{next_month}}</h4>
     <ul>
   {% else %}    
     {% if this_month != next_month %}
