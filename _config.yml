@@ -58,6 +58,13 @@ gitment-repo: Tomy-Lee.github.io
 gitment-client-id: 4abc5e10d70c776bf952
 gitment-client-secret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
+
+#gitalk:
+#    owner: mzlogin
+#    repo: blog-comments
+#    clientID: d2e1cbbd298958076462
+#   clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+
 # Baidu Analytics
 ba_track_id: 6858702ae375439b53fbacfb58361115
 
