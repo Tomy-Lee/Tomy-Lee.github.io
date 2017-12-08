@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "Archives"
-description: 当前共有{{site.posts.size}}篇博客
+description: ""
 header-img: "img/25_184488_1cd4961dbb66938.jpg"
 ---
 
+ <meta name="description" content="{{ site.posts.size }}">
 {% assign posts_collate = site.posts %}
 {% include posts_collate %}
 
