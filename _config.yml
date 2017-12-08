@@ -58,12 +58,12 @@ gitment-repo: Tomy-Lee.github.io
 gitment-client-id: 4abc5e10d70c776bf952
 gitment-client-secret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
-
-#gitalk:
-#    owner: Tomy-Lee
-#    repo: Tomy-Lee.github.io
-#    clientID: 4abc5e10d70c776bf952
-#   clientSecret: 0f99682605bd295411c894f4a8a42314d9de9d9d
+#For gitalk
+gitalk: true
+gitalk_owner: Tomy-Lee
+gitalk_repo: Tomy-Lee.github.io
+gitalk_clientID: 4abc5e10d70c776bf952
+gitalk_clientSecret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
 # Baidu Analytics
 ba_track_id: 6858702ae375439b53fbacfb58361115
