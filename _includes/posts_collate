@@ -24,7 +24,6 @@ Usage:
 {% capture next_month %}{{ post.previous.date | date: "%-m月" }}{% endcapture %}
 
 {% if forloop.first %}
-<h1>{{site.posts.size}}</h1>
   <h2>{{this_year}}</h2>
   <h4 style="color:#607B8B">{{this_month}}</h4>
   <ul>
