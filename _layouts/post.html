@@ -92,7 +92,11 @@ layout: default
                 {% if site.gitment %}
                 <div id="gitment-container"></div>
                 {% endif %}
-
+ 
+		    {% if site.gitalk %}
+                <div id="gitalk-container"></div>
+                {% endif %}
+		    
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
@@ -169,8 +173,22 @@ layout: default
 <!-- UY END -->
 
 <!--Gitalk BEGIN -->
+{% if site.gitalk %}
  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  id: '{{ page.id }}',
+  title: '{{ page.title }}',
+  clientID: '{{ site.gitalk_clientID }}',
+  clientSecret: '{{ site.gitalk_clientSecret }}',
+  repo: '{{ site.gitalk_repo }}',
+  owner: '{{ site.gitalk_owner }}',
+  admin: ['{{ site.gitalk_owner }}'],
+})
+gitalk.render('gitalk-container')
+</script>
+{% endif %}
 <!--Gitalk END -->
 
 <!-- IntenseDebate BEGIN -->
@@ -201,7 +219,6 @@ var idcomments_post_url;
     gitment.render('gitment-container')
 </script>
 {% endif %}
-
 
 
 {% if site.netease_comment %}
