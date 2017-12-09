@@ -12,7 +12,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
-#twitter_username: TomyLeeeeee
+twitter_username: TomyLeeeeee
 weibo_username:     tomyleee
 zhihu_username:     li-jia-54-85-55
 github_username:    Tomy-Lee
@@ -67,6 +67,10 @@ gitalk_clientSecret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
 # Baidu Analytics
 ba_track_id: 6858702ae375439b53fbacfb58361115
+
+
+ga_track_id: 'UA-110933268-1'            # Format: UA-xxxxxx-xx
+ga_domain: tomylijia.com
 
 
 # Sidebar settings
