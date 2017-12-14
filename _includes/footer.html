@@ -6,7 +6,7 @@
                 <ul class="list-inline text-center">
                     {% if site.RSS %}
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -16,7 +16,7 @@
                     {% endif %}
                     {% if site.twitter_username %}
                     <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                        <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -28,7 +28,7 @@
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     {% if site.zhihu_username %}
                     <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}" title="zhihu">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
@@ -38,7 +38,7 @@
                     {% endif %}
                     {% if site.weibo_username %}
                     <li>
-                        <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+                        <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}" title="Weibo">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
@@ -50,7 +50,7 @@
 
                     {% if site.facebook_username %}
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+                        <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -60,7 +60,7 @@
                     {% endif %}
                     {% if site.github_username %}
                     <li>
-                        <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                        <a target="_blank" href="https://github.com/{{ site.github_username }}" title="Github">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
