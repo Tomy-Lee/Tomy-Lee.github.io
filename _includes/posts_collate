@@ -24,7 +24,7 @@ Usage:
 {% capture next_month %}{{ post.previous.date | date: "%-m月" }}{% endcapture %}
 
 {% if forloop.first %}
-  <h4 style="color:#C1CDCD">&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;当前共有{{ site.posts.size }}篇博客，继续努力&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;</h4>
+  <h4 style="color:#B5B5B5">&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;当前共有{{ site.posts.size }}篇博客，继续努力&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;</h4>
   <h2>{{this_year}}</h2>
   <h4 style="color:#607B8B">{{this_month}}</h4>
   <ul>
