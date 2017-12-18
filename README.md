@@ -4,7 +4,7 @@
 ### This is [My Blog](http://tomylijia.com).
 ### Thanks [Hux](https://github.com/Huxpro) for the theme.
 
-博客改进大事记：
+### 博客改进大事记：
 - before 选用主题，更改属于自己的代码;更换图片、简介、文章等内容;
 - 2017.10 添加[Gitment](https://github.com/imsun/gitment)评论功能;
 - 2017.10 添加[Jia This](http://www.jiathis.com/)分享功能;
