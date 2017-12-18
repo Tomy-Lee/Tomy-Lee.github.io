@@ -116,6 +116,56 @@ layout: default
                 {% endif %}
             </div>  
 
+		<!-- BAIDU SHARE BEGIN-->
+<div class="bdsharebuttonbox" style="width:750px; height:20px;">
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+	<a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a>
+	<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+	<a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+	<a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+</div>
+<script>window._bd_share_config={
+		"common":{
+			"bdSnsKey":{},
+			"bdText":"分享自择日而终的博客 | Tomy-Lee Blog（关于代码,关于人生 | 李佳,软件工程,计算机应用技术 | 这里是李佳的个人博客,去探索更大的世界。）： {{page.title}}——{{page.subtitle}}；",
+			
+			"bdMini":"2",
+			"bdMiniList":false,
+			"bdPic":"",
+			"bdStyle":"1",
+			"bdSize":"24"},
+		"share":{},
+		"image":{
+			"viewList":["linkedin","sqq","weixin","tsina","renren","bdysc","douban","youdao","evernotecn"],
+			"viewText":"分享到：","viewSize":"24"},
+		"selectShare":{
+			"bdContainerClass":null,
+			"bdSelectMiniList":["linkedin","sqq","weixin","tsina","renren","bdysc","douban","youdao","evernotecn"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!--BAIDU SHARE END -->
+
+<!--Gitalk BEGIN -->
+{% if site.gitalk %}
+ <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  id: '{{ page.id }}',
+  title: '{{ page.title }}',
+  clientID: '{{ site.gitalk_clientID }}',
+  clientSecret: '{{ site.gitalk_clientSecret }}',
+  repo: '{{ site.gitalk_repo }}',
+  owner: '{{ site.gitalk_owner }}',
+  admin: ['{{ site.gitalk_owner }}'],
+})
+gitalk.render('gitalk-container')
+</script>
+{% endif %}
+<!--Gitalk END -->
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
@@ -177,56 +227,7 @@ layout: default
 <!-- UY END -->
 
 
-<!-- BAIDU SHARE BEGIN-->
-<div class="bdsharebuttonbox" style="width:750px; height:20px;">
-	<a href="#" class="bds_more" data-cmd="more"></a>
-	<a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-	<a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a>
-	<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-	<a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
-	<a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
-</div>
-<script>window._bd_share_config={
-		"common":{
-			"bdSnsKey":{},
-			"bdText":"分享自择日而终的博客 | Tomy-Lee Blog（关于代码,关于人生 | 李佳,软件工程,计算机应用技术 | 这里是李佳的个人博客,去探索更大的世界。）： {{page.title}}——{{page.subtitle}}；",
-			
-			"bdMini":"2",
-			"bdMiniList":false,
-			"bdPic":"",
-			"bdStyle":"1",
-			"bdSize":"24"},
-		"share":{},
-		"image":{
-			"viewList":["linkedin","sqq","weixin","tsina","renren","bdysc","douban","youdao","evernotecn"],
-			"viewText":"分享到：","viewSize":"24"},
-		"selectShare":{
-			"bdContainerClass":null,
-			"bdSelectMiniList":["linkedin","sqq","weixin","tsina","renren","bdysc","douban","youdao","evernotecn"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-<!--BAIDU SHARE END -->
 
-<!--Gitalk BEGIN -->
-{% if site.gitalk %}
- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script>
-var gitalk = new Gitalk({
-  id: '{{ page.id }}',
-  title: '{{ page.title }}',
-  clientID: '{{ site.gitalk_clientID }}',
-  clientSecret: '{{ site.gitalk_clientSecret }}',
-  repo: '{{ site.gitalk_repo }}',
-  owner: '{{ site.gitalk_owner }}',
-  admin: ['{{ site.gitalk_owner }}'],
-})
-gitalk.render('gitalk-container')
-</script>
-{% endif %}
-<!--Gitalk END -->
 
 <!-- IntenseDebate BEGIN 
 <script>
