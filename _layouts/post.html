@@ -128,7 +128,6 @@ layout: default
 
 <!--Gitalk BEGIN -->
 {% if site.gitalk %}
-<div>
  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
@@ -143,9 +142,10 @@ var gitalk = new Gitalk({
 })
 gitalk.render('gitalk-container')
 </script>
-</div>
+
 {% endif %}
 <!--Gitalk END -->
+</div>
 
                 {% if site.gitment %}
                 <div id="gitment-container"></div>
