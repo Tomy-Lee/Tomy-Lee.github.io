@@ -6,7 +6,6 @@ description: "世界大了，不准嬉戏；遥遥长路，错综跷崎。"
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-         <div class="post-header-img" style="background-image: url('{{ post.preview-img }}')"></div>
         <h2 class="post-title">
             {{ post.title }}
         </h2>
@@ -16,7 +15,7 @@ description: "世界大了，不准嬉戏；遥遥长路，错综跷崎。"
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:100 }}
+            {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
     <p class="post-meta">
