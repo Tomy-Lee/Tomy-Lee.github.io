@@ -6,7 +6,7 @@ description: "世界大了，不准嬉戏；遥遥长路，错综跷崎。"
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-         <div class="post-header-img" style="background-image: url('{{ site.baseurl }}{{ post.preview-img }}')"></div>
+         <div class="post-header-img" style="background-image: url('{{ post.preview-img }}')"></div>
         <h2 class="post-title">
             {{ post.title }}
         </h2>
