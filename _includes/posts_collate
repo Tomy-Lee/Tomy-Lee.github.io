@@ -39,7 +39,9 @@ Usage:
   {% if this_year != next_year %}
     </ul>
     <hr />
+    <hr />
     <h2>{{next_year}}</h2>
+    <hr />
     <h4 style="color:#607B8B">{{next_month}}</h4>
     <ul>
   {% else %}    
