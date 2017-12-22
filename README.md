@@ -5,7 +5,7 @@
 ### Thanks [Hux](https://github.com/Huxpro) for the theme.
 
 ### 博客改进大事记：
-- before 选用主题，更改个人资料等代码部分，添加自己的额外功能代码;更换图片、简介、文章、百度分析、谷歌分析等内容;
+- before 选用主题，更改个人资料，添加自己的额外功能代码;更换图片、简介、文章、百度分析、谷歌分析等内容;
 - 2017.10 购买域名[My Blog](http://tomylijia.com)，解析并添加CNAME;
 - 2017.10 添加[Gitment](https://github.com/imsun/gitment)评论功能;
 - 2017.10 添加[Jia This](http://www.jiathis.com/)分享功能;
