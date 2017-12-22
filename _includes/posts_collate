@@ -25,6 +25,7 @@ Usage:
 
 {% if forloop.first %}
   <h4 style="color:#B5B5B5">&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;当前共有{{ site.posts.size }}篇博客，继续努力&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;&laquo;</h4>
+  <hr />
   <h2>{{this_year}}</h2>
   <h4 style="color:#607B8B">{{this_month}}</h4>
   <ul>
@@ -37,12 +38,14 @@ Usage:
 {% else %}
   {% if this_year != next_year %}
     </ul>
+    <hr />
     <h2>{{next_year}}</h2>
     <h4 style="color:#607B8B">{{next_month}}</h4>
     <ul>
   {% else %}    
     {% if this_month != next_month %}
     </ul>
+    <hr />
       <h4 style="color:#607B8B">{{next_month}}</h4>
       <ul>
     {% endif %}
