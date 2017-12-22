@@ -2,7 +2,7 @@
 layout:     post
 title: 使用Go语言开发selpg命令行程序
 subtitle:  Go语言编程
-date:       2016-10-15
+date:       2017-10-15
 author:     "tomylee"
 header-img: "img/home-bg-o.jpg"
 catalog: true
