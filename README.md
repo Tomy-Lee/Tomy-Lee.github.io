@@ -23,3 +23,4 @@
 - 2017.12.17 从Jia This分享更改为[百度分享](http://share.baidu.com/);
 - 2017.12.18 添加背景动画[canvas-nest](https://github.com/hustcc/canvas-nest.js)；
 - 2017.12.21 添加百度站长工具;
+- 2018.1.12 给post.html添加B站外链接播放器，可以直接在博客头部加上视频id实现播放;
