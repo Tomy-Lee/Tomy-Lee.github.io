@@ -33,7 +33,7 @@ for i in sys.argv:
 # 统计参数个数
 print ('There are ',len(sys.argv)-1,'arguments')
 ```
-[1](img/QQ截图20180125123524.png)
+![1](img/QQ截图20180125123524.png)
 
 #### （2）sys.exit([arg])
 执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，可以调用sys.exit函数，带有一个可选的整数参数返回给调用它的程序，表示你可以在主程序中捕获对sys.exit的调用。（0是正常退出，其他为异常）当参数非0时，会引发一个SystemExit异常，从而可以在主程序中捕获该异常。
@@ -49,7 +49,7 @@ except SystemExit:
 
 print ('exited')
 ```
-[1](img/捕获.PNG)
+![2](img/捕获.PNG)
 
 #### （3）sys.platform
 获取当前执行环境的平台，win32表示Windows 32bit操作系统，linux2表示linux平台；
