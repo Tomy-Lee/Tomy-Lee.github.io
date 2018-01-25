@@ -5,8 +5,17 @@ description: "Hey, this is Tomy."
 header-img: "img/post-bg-unix-linux.jpg"
 ---
 <!--<iframe height=498 width=700 src='http://player.youku.com/embed/XMzEwNTE0MTgwNA==' frameborder=0 'allowfullscreen'></iframe> -->
-<EMBED align=middle src=http://player.youku.com/player.php/sid/XMzEwNTE0MTgwNA/v.swf  
- width=700 height=550 type=application/x-shockwave-flash wmode="opaque" flashvars="isAutoPlay=true" allowscriptaccess="sameDomain" quality="standard"></EMBED>
+
+<div id="youkuplayer" style="width:480px;height:400px"></div>
+<script type="text/javascript" src="//player.youku.com/jsapi"></script>
+<script type="text/javascript">
+var player = new YKU.Player('youkuplayer',{
+styleid: '0',
+client_id: 'YOUR YOUKUOPENAPI CLIENT_ID',
+vid: 'XMzEwNTE0MTgwNA',
+newPlayer: true
+});
+</script>
 
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=130 src="//music.163.com/outchain/player?type=2&id=347597&auto=1&height=66"></iframe>Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
