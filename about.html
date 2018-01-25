@@ -13,8 +13,16 @@ var player = new YKU.Player('youkuplayer',{
 styleid: '0',
 client_id: 'YOUR YOUKUOPENAPI CLIENT_ID',
 vid: 'XMzEwNTE0MTgwNA',
-newPlayer: true
+newPlayer: true,
+autoplay: true,
+show_related: false
 });
+    function pauseVideo(){
+player.pauseVideo();
+}
+function playVideo(){
+player.playVideo();
+}
 </script>
 
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=130 src="//music.163.com/outchain/player?type=2&id=347597&auto=1&height=66"></iframe>Language Selector -->
