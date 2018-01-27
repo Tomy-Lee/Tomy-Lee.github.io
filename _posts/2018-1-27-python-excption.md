@@ -1,6 +1,6 @@
 ---
 layout:     post
-title: Python异常处理try...except、raise
+title: Python:try...except、raise、finally
 subtitle:  Python3错误和异常处理
 date:       2018-1-27
 author:     "tomylee"
