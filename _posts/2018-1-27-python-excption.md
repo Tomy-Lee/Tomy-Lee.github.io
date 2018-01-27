@@ -9,9 +9,9 @@ tags:
     - Python
 ---
 
-今天学习到了Python3的错误和异常处理，Python有两种错误很容易辨认：语法错误和异常。这里有一个教程，对于基础的try...except异常处理以及raise抛出异常、自定义异常、定义清理行为讲的还是比较详细的：[Python3 错误和异常](http://www.runoob.com/python3/python3-errors-execptions.html)。
+#### 今天学习到了Python3的错误和异常处理，Python有两种错误很容易辨认：语法错误和异常。这里有一个教程，对于基础的try...except异常处理以及raise抛出异常、自定义异常、定义清理行为讲的还是比较详细的：[Python3 错误和异常](http://www.runoob.com/python3/python3-errors-execptions.html)。
 
-下面是教程中没有提到的Python的标准异常类:
+#### 下面是教程中没有提到的Python的标准异常类:
 
 |异常名称	|描述|
 |---|---|
