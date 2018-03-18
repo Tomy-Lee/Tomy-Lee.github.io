@@ -41,7 +41,7 @@ SWWEBok的10个知识域（KnowledgeAreas，KA）如下：
 |软件工程工具和方法|Software Engineering Tools and Methods|
 |软件质量|Software Quality|
 
-本课程关注的KA有软件需求、软件设计、软件建构、软件测试、软件构型管理、软件开发工程、软件质量等。 
+本课程关注的KA有软件需求、软件设计、软件建构、软件工程过程、软件工程工具和方法等。 
 
 #### 5.解释 CMMI 的五个级别。例如：Level 1 - Initial：无序，自发生产模式。
 
