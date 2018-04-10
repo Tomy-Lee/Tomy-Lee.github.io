@@ -56,7 +56,7 @@ Docker 使用客户端-服务器 (C/S) 架构模式，使用远程API来管理�
 
 然后选择左侧的启用或关闭Windows功能：
 
-![2](/img/system/2.png)
+![2](/img/system/25.png)
 
 打开Hyper-V：
 
