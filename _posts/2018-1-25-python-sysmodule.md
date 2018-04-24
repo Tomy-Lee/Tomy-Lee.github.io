@@ -14,13 +14,16 @@ tags:
 ### sys模块的常见函数列表
 #### （1）sys.argv
 实现从程序外部向程序传递参数，可以用sys.argv获取当前正在执行的命令行参数的参数列表(list)，len(sys.argv)获取总的参数个数。
+
 |变量|	解释|
 |---|---|
 |sys.argv[0]|	当前程序名|
 |sys.argv[1]|	第一个参数|
 |sys.argv[2]|	第二个参数|
 |...|...|
+
 示例代码：
+
 ```python
 import sys
 
