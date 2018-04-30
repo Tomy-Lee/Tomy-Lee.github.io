@@ -28,7 +28,7 @@ tags:
 - 不负责的链接 http://www.cnblogs.com/mcgrady/archive/2013/05/25/3098588.html
 
 
-![2](/img/system/42423.PNG)
+![2](/img/system/42423.png)
 
 - 导出 Mysql 物理数据库的脚本
 
