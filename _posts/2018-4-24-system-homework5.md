@@ -26,10 +26,120 @@ tags:
 - 按 Task 3 要求，给出系统的 E-R 模型（数据逻辑模型）
 - 建模工具 PowerDesigner（简称PD） 或开源工具 OpenSystemArchitect
 - 不负责的链接 http://www.cnblogs.com/mcgrady/archive/2013/05/25/3098588.html
-- 导出 Mysql 物理数据库的脚本
-- 简单叙说 数据库逻辑模型 与 领域模型 的异同
 
-![2](/img/system/4242.PNG)
+
+![2](/img/system/42423.PNG)
+
+- 导出 Mysql 物理数据库的脚本
+
+```
+drop table if exists Bill;
+
+drop table if exists Credit_Card;
+
+drop table if exists Hotel;
+
+drop table if exists Reservation;
+
+drop table if exists Room;
+
+drop table if exists Traveler;
+
+
+create table Bill
+(
+   Price                double,
+   Email                text,
+   Card_Number          text,
+   Bill_Number          text not null,
+   Reservation_Number   text not null,
+   primary key (Bill_Number)
+);
+
+
+
+create table Credit_Card
+(
+   Card_Number          text not null,
+   Owner                text,
+   Saving               double,
+   Security_Code        text,
+   primary key (Card_Number)
+);
+
+
+
+create table Hotel
+(
+   Hotel_Name           text not null,
+   City                 text,
+   Address              text not null,
+   primary key (Hotel_Name, Address)
+);
+
+
+
+create table Reservation
+(
+   Room_Number          text not null,
+   Check_In             date not null,
+   Check_Out            date not null,
+   Hotel_Name           text not null,
+   Address              text not null,
+   Adult_Count          int,
+   Child_Count          int,
+   Child_Age            int,
+   Price                double,
+   Traveler_Name        text,
+   Reservation_Number   text not null,
+   Bill_Number          text not null,
+   primary key (Reservation_Number)
+);
+
+
+
+create table Room
+(
+   Room_Number          text not null,
+   Hotel_Name           text,
+   Address              text,
+   Availability         bool,
+   primary key (Room_Number)
+);
+
+
+
+create table Traveler
+(
+   Name                 text,
+   Email                text not null,
+   Smoking              bool,
+   primary key (Email)
+);
+
+alter table Bill add constraint FK_Reference_3 foreign key (Email)
+      references Traveler (Email) on delete restrict on update restrict;
+
+alter table Bill add constraint FK_Reference_4 foreign key (Card_Number)
+      references Credit_Card (Card_Number) on delete restrict on update restrict;
+
+alter table Bill add constraint FK_Reference_6 foreign key (Reservation_Number)
+      references Reservation (Reservation_Number) on delete restrict on update restrict;
+
+alter table Reservation add constraint FK_Reference_1 foreign key (Room_Number)
+      references Room (Room_Number) on delete restrict on update restrict;
+
+alter table Reservation add constraint FK_Reference_5 foreign key (Hotel_Name, Address)
+      references Hotel (Hotel_Name, Address) on delete restrict on update restrict;
+
+alter table Reservation add constraint FK_Reference_6 foreign key (Bill_Number)
+      references Bill (Bill_Number) on delete restrict on update restrict;
+
+alter table Room add constraint FK_Reference_2 foreign key (Hotel_Name, Address)
+      references Hotel (Hotel_Name, Address) on delete restrict on update restrict;
+```
+
+- 简单叙说 数据库逻辑模型 与 领域模型 的异同
 
 领域模型（概念模型）就是在了解了用户的需求，用户的业务领域工作情况以后，经过分析和总结，提炼出来的用以描述用户业务需求的一些概念的东西。（此时可以不包含属性，只有实体集，联系集的分析结构）
 
