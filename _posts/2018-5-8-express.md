@@ -159,6 +159,8 @@ package.json——项目依赖配置及开发者信息。
 
 [express API手册](http://www.expressjs.com.cn/4x/api.html)
 
+[Express 4.x API 中文文档](https://www.runoob.com/w3cnote/express-4-x-api.html)
+
 [搭建开发框架Express，实现Web网站登录验证](https://blog.csdn.net/keliyxyz/article/details/51956814)
 
 [express框架开发案例](http://www.cnblogs.com/ssqqhh/p/6289690.html)
