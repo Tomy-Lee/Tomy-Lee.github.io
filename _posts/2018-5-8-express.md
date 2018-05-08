@@ -61,14 +61,16 @@ MongoDB 是一个基于分布式文件存储的数据库。旨在为 WEB 应用�
 
 首先需要下载mongodb，下面是不同环境下的地址：
 Windows 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
 Linux 用户向导：https://docs.mongodb.com/manual/administration/install-on-linux/
+
 Mac 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
 配置与连接启动mongodb可以参考[Windows 平台安装 MongoDB](http://www.runoob.com/mongodb/mongodb-window-install.html)，这里不再赘述。
 
 安装配置完成以后启动mongodb，以管理员身份运行，如下图：
 
-![mongodb启动](https://img-blog.csdn.net/20180508100633131)
+![mongodb启动](https://img-blog.csdn.net/20180508104803669)
 
 #### 4.Robomongo / Mongochef
 
