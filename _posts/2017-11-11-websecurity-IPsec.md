@@ -19,13 +19,13 @@ IPsec 封装安全负载(IPsec ESP)是 IPsec 体系结构中的一种主要协�
 
 ### 三、传输模式下ESP报文的装包与拆包过程
 在传输模式下的IPSec ESP报文的结构图如下：
-![这里写图片描述](http://img.blog.csdn.net/20171111203814419?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171111203814419)
 
 #### 装包过程：
 ```
 1.在原IP报文末尾添加尾部(ESP trailer)。尾部信息如图所示，包含三部分。由于所选加密算法可能是块加密，当最后一块长度不够时，需要进行补充(padding)。且需要附上填充长度(Pad length)来方便解包时顺利找出用来填充的那一段数据。而Next header则用来表明被加密的数据报文的类型。
 ```
-![这里写图片描述](http://img.blog.csdn.net/20171111203952222?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171111203952222)
 ```
 2.将原数据报文和刚添加的ESP尾部信息作为一个整体进行加密，具体的加密算法由密钥和SA给出。            
 3.在第2步得到的加密数据前添加ESP Header。ESP Header由SPI和序号(Sequence number)两部分组成。加密数据与ESP头合称为”enchilada”。
