@@ -79,9 +79,9 @@ Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation 
 
 ---
 ## 三、X.509证书实例
-![这里写图片描述](http://img.blog.csdn.net/20171111204745875?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20171111204753131?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20171111204800163?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171111204745875)
+![这里写图片描述](http://img.blog.csdn.net/20171111204753131)
+![这里写图片描述](http://img.blog.csdn.net/20171111204800163)
 
 ## 四、工作原理
 X.509给出的鉴别框架是一种基于公开密钥体制的鉴别业务密钥管理。用户拥有两把密钥—公钥、私钥。在发送文件之前，用户可以用加密算法对信息加密，然后用接收者的公钥再次加密，而接受者就可以用自己的私钥对其解密。该框架允许用户将其公钥放在CA的目录项中，用户想与其他用户通信，就可以直接从对方的目录项中获得相应的公开密钥，用于各种安全服务
