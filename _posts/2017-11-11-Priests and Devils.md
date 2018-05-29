@@ -31,14 +31,14 @@ tags:
 >
 >SceneController           ______   C
         
-![这里写图片描述](http://img.blog.csdn.net/20170330234748587?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/img/cloudgoinout/pd1.png)
 ### 3.在 GenGameObjects 中创建 长方形、正方形、球 及其色彩代表游戏中的对象。 
 答：Devil: 恶魔
     Priset:牧师
     Shore:河岸
     Boat:船
    创建效果如下图：
-   ![这里写图片描述](http://img.blog.csdn.net/20170330234923802?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+   ![这里写图片描述](/img/cloudgoinout/pd2.png)
  
 ### 4.用表格列出玩家动作表（规则表），注意，动作越少越好 
 ![1](/img/捕获.PNG)
