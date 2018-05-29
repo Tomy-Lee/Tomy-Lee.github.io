@@ -33,7 +33,7 @@ express 是 Node.js 上最流行的 Web 开发框架，首先需要下载node.js
 
 安装好后我们可以在命令行用`node -v`查看是否安装成功，出现版本号则表示安装成功：
 
-![node.js安装](https://img-blog.csdn.net/20180508095023294)
+![node.js安装](http://img-blog.csdn.net/20180508095023294)
 
 Linux可以使用源码安装：
 
