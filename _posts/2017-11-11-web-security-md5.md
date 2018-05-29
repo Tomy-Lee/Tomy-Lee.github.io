@@ -384,17 +384,17 @@ int main() {
 ### 四、实现效果
 
 #### 1.首先是运行的初始界面，可以选择两种方式之一进行信息加密，1 是手动输入明文进 行加密，2 是读取 message.txt 中的明文。
-![这里写图片描述](http://img.blog.csdn.net/20171111203002990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/img/cloudgoinout/md1.png)
 
 #### 2.手动输入明文进行加密效果。加密结果会输出到 result.txt 文件中。
-![这里写图片描述](http://img.blog.csdn.net/20171111203033913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20171111203042442?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/img/cloudgoinout/md2.png)
+![这里写图片描述](/img/cloudgoinout/md3.png)
 
 #### 3.读取 message.txt 中的明文进行加密并将结果输出到 result.txt 中。
-![这里写图片描述](http://img.blog.csdn.net/20171111203059319?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/img/cloudgoinout/md4.png)
 
 #### 4.这是加密结果与在线加密标准结果的对比，加密结果正确。
-![这里写图片描述](http://img.blog.csdn.net/20171111203115965?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/img/cloudgoinout/md5.png)
 
 ---
 作为一个安全的摘要算法在设计时必须满足两个要求——其一是寻找两个输入得到相 同的输出值在计算上是不可行的，这就是我们通常所说的抗碰撞的；其二是找一个输出，能 得到给定的输入在计算上是不可行的，即不可从结果推导出它的初始状态——MD5 已经无法满足第一个条件，也就是说 MD5 已经不安全了。但是碰撞概率很低，而且也没有特别高效的找出碰撞的算法，所以对其的破解，据网上搜索的结果，主流的都不是针对算法本身，而是针对算法的使用方式。比如，对未经加密的一个密码库运用 MD5 产生对应的 MD5 密码库 a，然后如果能够查询到网站服务器上的经过 MD5 处理的密码库数据 b，那么就可以用 b 和 a 中数据直接进行匹对，找到 a 中对应 MD5 密码后，对应回其原密码就好了。其关键在于首先 a 要足够的大，可能包含到所需的密码，第二是要得到 b 中的数据．网络上有 一些 MD5 查询破解网站，其就是有这样的一个密码库 a，提交一串 MD5 后，如果其数据库中刚好也有这个数据，即可破解成功。
