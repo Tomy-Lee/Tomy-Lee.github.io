@@ -79,9 +79,9 @@ Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation 
 
 ---
 ## 三、X.509证书实例
-![这里写图片描述](http://img.blog.csdn.net/20171111204745875)
-![这里写图片描述](http://img.blog.csdn.net/20171111204753131)
-![这里写图片描述](http://img.blog.csdn.net/20171111204800163)
+![这里写图片描述](/img/cloudgoinout/x5091.png)
+![这里写图片描述](/img/cloudgoinout/x5092.png)
+![这里写图片描述](/img/cloudgoinout/x5093.png)
 
 ## 四、工作原理
 X.509给出的鉴别框架是一种基于公开密钥体制的鉴别业务密钥管理。用户拥有两把密钥—公钥、私钥。在发送文件之前，用户可以用加密算法对信息加密，然后用接收者的公钥再次加密，而接受者就可以用自己的私钥对其解密。该框架允许用户将其公钥放在CA的目录项中，用户想与其他用户通信，就可以直接从对方的目录项中获得相应的公开密钥，用于各种安全服务
