@@ -314,32 +314,32 @@ if err != nil { panic(err) }
 ### <1>使用文件服务
 一般来说，生产环境静态文件的访问交给 WEB 服务器 Apache / Lighttpd / Nginx 处理。在开发、测试阶段也可以让 net/http 库处理。
 #### 1.静态文件服务,建立/api/test，并在服务器上创建目录，以存放静态内容，输出ID，age，content。下面是/api/test实现后的输出情况。
-![这里写图片描述](http://img.blog.csdn.net/20171118211043005)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout1.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118211054496)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout2.png)
 
-![](http://img.blog.csdn.net/20171118211103952)
+![](/img/cloudgoinout/cloudgoinout3.png)
 
 #### ２.下面依次展示了服务器添加文件结构以及文件夹下添加css、js文件后的情况。
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210347558)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout4.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210340438)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout5.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210328201)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout6.png)
 
 #### 3.添加完成后，再增加index.html文件，访问端口并查看监听情况。
-![这里写图片描述](http://img.blog.csdn.net/20171118210856644)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout7.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118211229460)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout8.png)
 
 #### 4.使用模板template输出。
-![这里写图片描述](http://img.blog.csdn.net/20171118211347767)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout9.png)
 
 #### 5.输出一个登录账户密码的表单表格。
-![这里写图片描述](http://img.blog.csdn.net/20171118211436069)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout10.png)
 
 #### 6./api/unknown正在开发中的501未实现信息提示。
-![这里写图片描述](http://img.blog.csdn.net/20171118211526245)
+![这里写图片描述](/img/cloudgoinout/cloudgoinout11.png)
 
 代码位置：[cloudgo-io](https://github.com/Tomy-Lee/cloudgo-io)
