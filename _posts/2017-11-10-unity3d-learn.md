@@ -156,13 +156,13 @@ public class AnimationLegacy : MonoBehaviour {
 
 ![这里写图片描述](/img/cloudgoinout/qa5.png)
 
-![这里写图片描述](/img/cloudgoinout/qa6.jpg)
+![这里写图片描述](/img/cloudgoinout/qa6.png)
 
 #### 将一个动画片段分割成了4个动画片段，这样就可以通过Animation组件来实现对动画的播放。而这正是在Mecanim动画系统推出之前Unity3D采用的动画控制形式。由于这个模型在建模的时候存在问题，所以导致瑕在游戏场景中的角度出现错误。用3D建模软件进行调整，结果意外得发现瑕的模型中是有骨骼的，可以利用Mecanim动画系统来为这个模型添加动画。由于这个模型在建模的时候将动画和模型一起创建了，因此需要首先将这个动画从模型中去除，因为Mecanim动画系统的一个主要思路就是让一套动画可以通过重定向应用到不同的模型上，既然有动画可用，那么模型自带的动画可以暂时去除。而让动画从模型中去除的方法很简单，就是在导出FBX模型的时候将嵌入的媒体选项不要勾选，这样模型就可以和动画分离开了。
 
 #### AnimatorController：如果说Avater是将模型的身体和骨骼实现匹配的接口，那么AnimatorController就是讲动画和模型实现绑定的接口。创建一个XiaAnimaterController。双击该文件，会打开Animator窗口，如图：
 
-![这里写图片描述](/img/cloudgoinout/qa7.jpg)
+![这里写图片描述](/img/cloudgoinout/qa7.png)
 #### 控制人物切换动画代码如下：
 ![这里写图片描述](/img/cloudgoinout/qa8.jpg)
 ![这里写图片描述](/img/cloudgoinout/qa9.jpg)
