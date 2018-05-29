@@ -33,7 +33,7 @@ express 是 Node.js 上最流行的 Web 开发框架，首先需要下载node.js
 
 安装好后我们可以在命令行用`node -v`查看是否安装成功，出现版本号则表示安装成功：
 
-![node.js安装](http://img-blog.csdn.net/20180508095023294)
+![node.js安装](https://img-blog.csdn.net/20180508095023294)
 
 Linux可以使用源码安装：
 
@@ -52,7 +52,7 @@ npm是随同Node.js一起安装的包管理工具，同样也可以用`npm -v`�
 npm可以用来安装卸载一些api包，例如`npm install (要安装的包)`，这样安装的包默认是本地安装，如果要全局安装可以在后面加上`-g`或者`--global`,详细用法可参考[npm使用小结](http://www.cnblogs.com/jingmoxukong/p/6228358.html)。
 
 
-![npm版本](http://img-blog.csdn.net/20180508095634510)
+![npm版本](https://img-blog.csdn.net/20180508095634510)
 
 由于npm的源有时候下载很慢，我们可以切换到国内的一下镜像，比如淘宝镜像等。具体教程以及npm的其他内容参考[NPM使用介绍](http://www.runoob.com/nodejs/nodejs-npm.html)。
 
@@ -71,7 +71,7 @@ Mac 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-o
 
 安装配置完成以后启动mongodb，以管理员身份运行，如下图：
 
-![mongodb启动](http://img-blog.csdn.net/20180508104803669)
+![mongodb启动](https://img-blog.csdn.net/20180508104803669)
 
 #### 4.Robomongo / Mongochef
 
@@ -82,7 +82,7 @@ Mac 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-o
 下载并安装成功后点击左上角的 `Create` 创建一个连接，给该连接起个名字如: `localhost`，使用默认地址（localhost）和端口（27017）即可，点击 `Save` 保存。
 
 双击 `localhost` 连接到 MongoDB 并进入交互界面。
-![robomongo](http://img-blog.csdn.net/20180508100757197)
+![robomongo](https://img-blog.csdn.net/20180508100757197)
 
 [MongoChef](http://3t.io/mongochef/) 是另一款强大的 MongoDB 可视化管理工具，支持 Windows、Linux 和 Mac。
 
@@ -98,7 +98,7 @@ MongoChef 相较于 Robomongo 更强大一些，但 Robomongo 比较轻量也能
 
 首先新建一个项目文件，并用`npm init`初始化一个`package.json`，有关`package.json`参考[package.json](https://github.com/nswbmw/N-blog/blob/master/book/2.5%20package.json.md)。
 
-![package.json](http://img-blog.csdn.net/20180508103253338)
+![package.json](https://img-blog.csdn.net/20180508103253338)
 
 然后安装`express`并写入`package.json`：
 
@@ -123,7 +123,7 @@ app.listen(3000)
 
 这段代码生成一个express实例app，挂载了一个根路由控制器，监听3000端口并启动程序。运行 `node index`，打开浏览器访问 `localhost:3000` 时，页面显示hello, express。
 
-![index](http://img-blog.csdn.net/20180508104038352)
+![index](https://img-blog.csdn.net/20180508104038352)
 
 #### 3.supervisor
 
@@ -135,13 +135,13 @@ npm i -g supervisor
 
 运行 `supervisor index` 启动程序：
 
-![supervisor](http://img-blog.csdn.net/2018050810390284)
+![supervisor](https://img-blog.csdn.net/2018050810390284)
 
 supervisor 会监听当前目录下 node 和 js 后缀的文件，当这些文件发生改动时，supervisor 会自动重启程序。
 
 ### 四、express目录结构
 
-![这里写图片描述](http://img-blog.csdn.net/2018050810421167)
+![这里写图片描述](https://img-blog.csdn.net/2018050810421167)
 
 ```
 bin——存放命令行程序。
