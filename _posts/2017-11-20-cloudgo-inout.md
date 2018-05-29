@@ -314,32 +314,32 @@ if err != nil { panic(err) }
 ### <1>使用文件服务
 一般来说，生产环境静态文件的访问交给 WEB 服务器 Apache / Lighttpd / Nginx 处理。在开发、测试阶段也可以让 net/http 库处理。
 #### 1.静态文件服务,建立/api/test，并在服务器上创建目录，以存放静态内容，输出ID，age，content。下面是/api/test实现后的输出情况。
-![这里写图片描述](http://img.blog.csdn.net/20171118211043005?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211043005)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118211054496?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211054496)
 
-![](http://img.blog.csdn.net/20171118211103952?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://img.blog.csdn.net/20171118211103952)
 
 #### ２.下面依次展示了服务器添加文件结构以及文件夹下添加css、js文件后的情况。
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210347558?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118210347558)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210340438?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118210340438)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118210328201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118210328201)
 
 #### 3.添加完成后，再增加index.html文件，访问端口并查看监听情况。
-![这里写图片描述](http://img.blog.csdn.net/20171118210856644?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118210856644)
 
-![这里写图片描述](http://img.blog.csdn.net/20171118211229460?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211229460)
 
 #### 4.使用模板template输出。
-![这里写图片描述](http://img.blog.csdn.net/20171118211347767?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211347767)
 
 #### 5.输出一个登录账户密码的表单表格。
-![这里写图片描述](http://img.blog.csdn.net/20171118211436069?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211436069)
 
 #### 6./api/unknown正在开发中的501未实现信息提示。
-![这里写图片描述](http://img.blog.csdn.net/20171118211526245?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171118211526245)
 
 代码位置：[cloudgo-io](https://github.com/Tomy-Lee/cloudgo-io)
