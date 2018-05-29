@@ -11,7 +11,9 @@ tags:
 ---
 
 ### 一、设计模式主要分为三类：1. 创建者模式2.结构性模式3.行为模式 
-![这里写图片描述](http://img.blog.csdn.net/20170424202200072?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170424202200072)
+
 #### <一>创建者模式是创建型模式中最负责的一个设计模式了，创建者负责构建一个对象的各个部分，并且完成组装的过程，我们可以这么理解创建者模式，创建者模式类似与一个步骤基本固定，但是每个步骤中的具体形式却又可以变化的这类对象的创建。创建者模式主要是用于创建复杂的一些对象，这些对象的创建步骤基本固定，但是可能具体的对象的组成部分却又可以自由的变化。
 #### <二>结构型设计模式是从程序的结构上解决模块之间的耦合问题。包含以下七种模式：
 ```
@@ -28,16 +30,23 @@ tags:
 
 ### 二、设计模式之间的关系如下：
 
-![这里写图片描述](http://img.blog.csdn.net/20170424202213431?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170424202213431)
 【设计模式图片来自：Jaiky_杰哥 
 图片出处：http://blog.csdn.net/jaikydota163/article/details/52767394】
+
 #### 接口隔离原则总结：客户端不应该依赖它不需要的接口；一个类对另一个类的依赖应该建立在最小的接口上。 将臃肿的接口I拆分为独立的几个接口，类A和类C分别与他们需要的接口建立依赖关系。也就是采用接口隔离原则。如果接口过于臃肿，只要接口中出现的方法，不管对依赖于它的类有没有用处，实现类中都必须去实现这些方法，这显然不是好的设计。如果将这个设计修改为符合接口隔离原则，就必须对接口进行拆分。修接口隔离原则的含义是：建立单一接口，不要建立庞大臃肿的接口，尽量细化接口，接口中的方法尽量少。也就是说，我们要为各个类建立专用的接口，而不要试图去建立一个很庞大的接口供所有依赖它的类去调用。在程序设计中，依赖几个专用的接口要比依赖一个综合的接口更灵活。接口是设计时对外部设定的“契约”，通过分散定义多个接口，可以预防外来变更的扩散，提高系统的灵活性和可维护性。
+
 ### 三、动画案例一    盖伦击球游戏
+
 游戏案例及所用图片来自：http://blog.csdn.net/qq_28057541/article/details/51172733
-![这里写图片描述](http://img.blog.csdn.net/20170424202921127?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170424202921127)
+
 #### 这个人做的是一个盖伦击球动画，其中AnimationLegacy用来控制动作的，和监听鼠标键盘，这里和后面的Judge一起形成了观察者模式。
+
 #### 对象树如下：
-![这里写图片描述](http://img.blog.csdn.net/20170424203534714?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170424203534714)
+
 #### 控制动作的AnimationLegacy部分如下：
 ```c#
 using UnityEngine;
@@ -141,17 +150,23 @@ public class AnimationLegacy : MonoBehaviour {
 }
 ```
 ### 四、动画案例二 
+
 案例及图片来自: http://dna.yiihuu.com/30793.html
 #### Mecanim动画系统的重定向特性，《仙剑奇侠传》是一部经典的RPG游戏，这部游戏到今天依然焕发着强大的生命力，该游戏基于Unity3D，由于技术上的一致性，这个博主向他们索取了一些游戏素材，而这成为了博主决心要研究Mecanim动画系统的一个主要原因。如图是《仙剑奇侠传五前传》中瑕的一个模型：
-![这里写图片描述](http://img.blog.csdn.net/20170424204217818?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20170424204542775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170424204217818)
+
+![这里写图片描述](http://img.blog.csdn.net/20170424204542775)
+
 #### 将一个动画片段分割成了4个动画片段，这样就可以通过Animation组件来实现对动画的播放。而这正是在Mecanim动画系统推出之前Unity3D采用的动画控制形式。由于这个模型在建模的时候存在问题，所以导致瑕在游戏场景中的角度出现错误。用3D建模软件进行调整，结果意外得发现瑕的模型中是有骨骼的，可以利用Mecanim动画系统来为这个模型添加动画。由于这个模型在建模的时候将动画和模型一起创建了，因此需要首先将这个动画从模型中去除，因为Mecanim动画系统的一个主要思路就是让一套动画可以通过重定向应用到不同的模型上，既然有动画可用，那么模型自带的动画可以暂时去除。而让动画从模型中去除的方法很简单，就是在导出FBX模型的时候将嵌入的媒体选项不要勾选，这样模型就可以和动画分离开了。
+
 #### AnimatorController：如果说Avater是将模型的身体和骨骼实现匹配的接口，那么AnimatorController就是讲动画和模型实现绑定的接口。创建一个XiaAnimaterController。双击该文件，会打开Animator窗口，如图：
-![这里写图片描述](http://img.blog.csdn.net/20170424204435038?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170424204435038)
 #### 控制人物切换动画代码如下：
-![这里写图片描述](http://img.blog.csdn.net/20170424204658054?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20170424204637460?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170424204658054)
+![这里写图片描述](http://img.blog.csdn.net/20170424204637460)
 #### 最后的动画效果：
-![这里写图片描述](http://img.blog.csdn.net/20170424203930301?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20170424204018395?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM0NTQxMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170424203930301)
+![这里写图片描述](http://img.blog.csdn.net/20170424204018395)
 
