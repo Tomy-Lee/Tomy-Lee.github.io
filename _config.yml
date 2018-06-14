@@ -6,8 +6,8 @@ header-img: img/dark_1.jpg
 email: tomyleee@163.com
 description: "关于代码,关于人生 | 李佳,软件工程,计算机应用技术 | 这里是李佳的个人博客,不再犹豫,去探索更大的世界。"
 keyword: "李佳, Tomy-Lee, tomylee, Tomy, lijia, @Tomy_Lee_, @tomylee, @Tomy-Lee, 个人网站, 软件工程, 计算机应用技术, 互联网, 博客, 设计"
-url: "https://github.com/Tomy-Lee"              # your host, for absolute URL
-baseurl: "/Tomy-Lee.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://tomy-lee.github.io"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
