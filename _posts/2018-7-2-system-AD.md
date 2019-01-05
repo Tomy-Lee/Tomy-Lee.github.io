@@ -4,7 +4,7 @@ title: 皮皮点餐系统软件设计文档
 subtitle:  系统分析与设计团队项目
 date:       2018-7-2
 author:     "tomylee"
-header-img: "img/t01c7d4d9a67918cf19.jpg"
+header-img: "img/1217913296033.jpg"
 tags:
     - JavaScript
     - team
