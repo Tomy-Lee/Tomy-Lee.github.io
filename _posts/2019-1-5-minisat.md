@@ -21,7 +21,7 @@ tags:
 ```
 ### 下面是我在阅读MiniSat论文时的部分思维导图，用以记录自己的阅读过程，相信大家也看不清图片。仅仅用来记录。
 
-![思维导图](/img/report/MiniSat_withMarginNotes.png）
+![](/img/report/MiniSat_withMarginNotes.png）
 
 ---
 ### 二、毕业设计时间轴（ing）
