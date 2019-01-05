@@ -27,11 +27,11 @@ tags:
 ### 二、毕业设计时间轴（ing）
 ```
  2018.12.25  小组会议，初步选定课题方向
-   12.26     NP问题，SAT问题，图染色问题，局部搜索问题  
+      12.26     NP问题，SAT问题，图染色问题，局部搜索问题  
              论文1：《组合测试:原理与方法》
              论文2：《TCA: An Efﬁcient Two-Mode Meta-Heuristic Algorithm for Combinatorial Test Generation》
-   12.27-29  源代码 ing
-   12.30  小组会议，提交generateModel接口代码
-   12.31    开始阅读MiniSat代码
+      12.27-29  源代码 ing
+      12.30  小组会议，提交generateModel接口代码
+      12.31    开始阅读MiniSat代码
  2019.1.3    论文第一遍概读完成，准备第二遍
 ```
