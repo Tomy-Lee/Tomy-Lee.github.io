@@ -15,7 +15,7 @@ tags:
 
 ![minisat](/img/report/MiniSat_withMarginNotes.png)
 
-二、论文阅读
+### 二、论文阅读
 
 ```
 1. 《组合测试:原理与方法》 严俊, 张健   Journal of Software, Vol.20, No.6, June 2009, pp.1393−1405 
