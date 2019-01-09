@@ -38,6 +38,7 @@ tags:
       12.31     开始阅读MiniSat代码
  2019.1.3       论文第一遍概读完成，准备第二遍
       1.7       开始阅读新论文
-                论文4:《Frequency-driven tabu search for the maximum s -plex problem》
-                论文5：《Two Efficient Local Search Algorithms for Maximum Weight Clique Problem》
+                论文5:《Frequency-driven tabu search for the maximum s -plex problem》
+      1.9       论文4：《Two Efficient Local Search Algorithms for Maximum Weight Clique Problem》
+                Conﬁguration Checking(CC)，最大团问题，禁忌搜索，s-plex
 ```
