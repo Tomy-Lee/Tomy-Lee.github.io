@@ -1,6 +1,6 @@
 ---
 layout:     post
-title: 毕业设计过程阶段小总结
+title: 毕业设计过程之阶段小总结
 subtitle:  论文，代码，相关问题
 date:       2019-1-5
 author:     "tomylee"
