@@ -17,7 +17,7 @@ tags:
 ![minisat](/img/report/MiniSat_withMarginNotes.png)
 
 2.MWCP
-![maximum clique](/img/report/89C04C12-D34B-4817-931B-9452BDA36082.png）
+![maximum clique](/img/report/89C04C12-D34B-4817-931B-9452BDA36082.png)
 
 ### 二、论文阅读
 
