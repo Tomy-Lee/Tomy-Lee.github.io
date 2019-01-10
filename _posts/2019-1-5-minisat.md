@@ -19,6 +19,9 @@ tags:
 2.MWCP
 ![maximum clique](/img/report/89C04C12-D34B-4817-931B-9452BDA36082.png)
 
+3.s-plex
+![s-plex](/img/report/3CE2DDD8-61EA-4631-85AA-53E5DF64C895.png)
+
 ### 二、论文阅读
 
 ```
@@ -41,8 +44,8 @@ tags:
       12.30     小组会议，提交generateModel接口代码
       12.31     开始阅读MiniSat代码
  2019.1.3       论文第一遍概读完成，准备第二遍
-      1.7       开始阅读新论文
-                论文5:Frequency-driven tabu search for the maximum s -plex problem
+      1.7       开始阅读新论文及代码
       1.9       论文4：Two Efficient Local Search Algorithms for Maximum Weight Clique Problem
                 Conﬁguration Checking(CC)，最大团问题，禁忌搜索，s-plex
+      1.10      论文5:Frequency-driven tabu search for the maximum s -plex problem 
 ```
