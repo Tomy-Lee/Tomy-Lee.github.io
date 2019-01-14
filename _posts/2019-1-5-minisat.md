@@ -47,5 +47,6 @@ tags:
       1.7       开始阅读新论文及代码
       1.9       论文4：Two Efficient Local Search Algorithms for Maximum Weight Clique Problem
                 Conﬁguration Checking(CC)，最大团问题，禁忌搜索，s-plex
-      1.10      论文5:Frequency-driven tabu search for the maximum s -plex problem 
+      1.10      论文5:Frequency-driven tabu search for the maximum s -plex problem
+      1.13      小组讨论，下一步设计方法改进CC应用于s-plex
 ```
