@@ -51,4 +51,8 @@ tags:
       1.13      小组讨论，下一步设计方法改进CC应用于s-plex
       1.19      研究师兄对于s-plex的改进（DTCC）
       1.21      讨论DTCC属性值修改规则及潜在的提升
+      1.22      分析小组内kplex-DTCC-RL(Reinforcement Learning)代码；
+                调节基于扰动的强化学习模型DTCC-RL中vpush的概率参数
+      1.23      分析Multi-armed bandit problem（多臂赌博机问题），提升实验结果在MANN上的鲁棒性。
+                Benchmark针对数据集mann_a81.clq     mann_a45.clq两个情况。
 ```
