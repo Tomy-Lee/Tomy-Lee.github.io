@@ -70,4 +70,16 @@ tags:
       2.22      LaTex绘制论文数据表格
       2.25      整理实验数据，编制latex格式结果表格
       2.26      使用新数据绘制realworld结果表格，修正论文
+      3.2       制作论文介绍PPT
+      3.3       开始回到第一个论文课题：TCA 
+      3.7       组内讨论，商定下一步计划。开始分析TCA代码结构。
+                论文1:[casa]Evaluating improvements to a meta-heuristic search for constrained interaction testing
+      3.10-4.17 毕业论文
+      4.18      IJCAI19论文rebuttal，新添加不使用强化学习的BLP对照实验。
+      4.20      协助师兄进行ASE19论文实验处理。
+                论文1：2016-Goal-conflict detection based on temporal satisfiability checking
+                论文2：2018-A genetic algorithm for goal-conflict identification
+      4.21      复现Tableaux实验
+      4.23      Tableaux-aalta实验服务器运行
+      4.25      Tableaux-pltl实验服务器运行
 ```
