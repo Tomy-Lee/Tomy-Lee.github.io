@@ -82,4 +82,9 @@ tags:
       4.21      复现Tableaux实验
       4.23      Tableaux-aalta实验服务器运行
       4.25      Tableaux-pltl实验服务器运行
+      5.1-5.6   LOGION和GA等13个算法部署实验，收集分析数据
+      5.7       LTLmodel counter复现
+      5.8       General计算实现
+      5.9       对比LOGION和conflict-detection-timeout的general表现
+      5.10      varify13个算法的BC，并汇总数据
 ```
