@@ -87,4 +87,27 @@ tags:
       5.8       General计算实现
       5.9       对比LOGION和conflict-detection-timeout的general表现
       5.10      varify13个算法的BC，并汇总数据
+      5.11-16   截稿前实验
+ 2019.6.13-6.19 看完Shaowei Cai老师16篇论文，看完"Stochastic Local Search"第1-5章                       
+                1.EWLS: A New Local Search for Minimum Vertex Cover
+                2.Local search with edge weighting and configuration checking heuristics for minimum vertex cover
+                3.Two New Local Search Strategies for Minimum Vertex Cover
+                4.Configuration Checking with Aspiration in Local Search for SAT
+                5.NuMVC: An Efficient Local Search Algorithm for Minimum Vertex Cover
+                6.Double Configuration Checking in Stochastic Local Search for Satisfiability
+                7.Two Weighting Local Search for Minimum Vertex Cover.
+                8.Improving WalkSAT By Effective Tie-Breaking and Efficient Implementation
+                9.Fast Solving Maximum Weight Clique Problem in Massive Graphs
+                10.Two Efficient Local Search Algorithms for Maximum Weight Clique Problem
+                11.Local Search for Minimum Weight Dominating Set with Two-Level Configuration Checking and Frequency Based Scoring Function
+                12.Finding A Small Vertex Cover in Massive Sparse Graphs: Construct, Local Search, and Preprocess
+                13.A Fast Local Search Algorithm for Minimum Weight Dominating Set Problem on Massive Graphs
+                14.Improving Local Search for Minimum Weight Vertex Cover by Dynamic Strategies
+                15.NuMWVC: A Novel Local Search for Minimum Weighted Vertex Cover Problem
+                16.Towards faster local search for minimum weight vertex cover on massive graphs
+ 2019.6.20-6.24 看完三篇机器学习与运筹优化论文，针对最大k-plex问题提出重启策略的变体；
+                寻找研究方向新问题作为研究生方向挑战；
+                1.Machine Learning for Combinatorial Optimization_ a Methodological Tour d'Horizon
+                2.Machine Learning-Based Restart Policy for CDCL SAT Solvers
+                3.An Empirical Study of Branching Heuristics Through the Lens of Global Learning Rate 
 ```
