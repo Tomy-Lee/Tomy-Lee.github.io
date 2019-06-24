@@ -88,7 +88,7 @@ tags:
       5.9       对比LOGION和conflict-detection-timeout的general表现
       5.10      varify13个算法的BC，并汇总数据
       5.11-16   截稿前实验
- 2019.6.13-6.19 看完Shaowei Cai老师16篇论文，看完"Stochastic Local Search"第1-5章                       
+      6.13-6.19 看完Shaowei Cai老师16篇论文，看完"Stochastic Local Search"第1-5章                       
                 1.EWLS: A New Local Search for Minimum Vertex Cover
                 2.Local search with edge weighting and configuration checking heuristics for minimum vertex cover
                 3.Two New Local Search Strategies for Minimum Vertex Cover
@@ -105,7 +105,7 @@ tags:
                 14.Improving Local Search for Minimum Weight Vertex Cover by Dynamic Strategies
                 15.NuMWVC: A Novel Local Search for Minimum Weighted Vertex Cover Problem
                 16.Towards faster local search for minimum weight vertex cover on massive graphs
- 2019.6.20-6.24 看完三篇机器学习与运筹优化论文，针对最大k-plex问题提出重启策略的变体；
+      6.20-6.24 看完三篇机器学习与运筹优化论文，针对最大k-plex问题提出重启策略的变体；
                 寻找研究方向新问题作为研究生方向挑战；
                 1.Machine Learning for Combinatorial Optimization_ a Methodological Tour d'Horizon
                 2.Machine Learning-Based Restart Policy for CDCL SAT Solvers
