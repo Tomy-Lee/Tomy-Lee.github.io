@@ -359,6 +359,7 @@ an-Order-system/
 
 
 ### 3.厨师相关操作
+
 | 路由  |  方法  |   说明     |  测试  |
 | :--: | :-------: | :--: | :--: |
 |  /?op=employeeLogin | POST | 厨师登录 | OK |
@@ -367,6 +368,7 @@ an-Order-system/
 
 
 ### 4.顾客相关操作
+
 | 路由  |  方法  |   说明     |  测试  |
 | :--: | :-------: | :--: | :--: |
 | /{managername}/client?tableID={tableid} | GET | 顾客扫码登录获取菜单界面 | OK |
