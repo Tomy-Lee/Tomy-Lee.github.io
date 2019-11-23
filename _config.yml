@@ -97,6 +97,9 @@ friends: [
         title: "Hux Blog",
         href: "https://huangxuan.me/"
     },{
+        title: "pmlpml",
+        href: "http://blog.csdn.net/pmlpml"
+    },{
         title: "干啥啥不行吃饭第一名",
         href: "https://www.jianshu.com/u/888c2316f30a"
     },{
@@ -105,9 +108,6 @@ friends: [
     },{
         title: "Leegal Blog",
         href: "http://blog.csdn.net/lyy_g"
-    },{
-        title: "pmlpml",
-        href: "http://blog.csdn.net/pmlpml"
     }
 ]
 
