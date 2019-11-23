@@ -90,15 +90,18 @@ friends: [
     {
         title: "My CSDN Blog",
         href: "http://blog.csdn.net/qq_33454112"
+    },{ 
+        title: "answerLDA Blog",
+        href: "https://www.jianshu.com/u/03abcc59b014"
+    },{
+        title: "Hux Blog",
+        href: "https://huangxuan.me/"
     },{
         title: "Huixu Blog",
         href: "http://blog.csdn.net/lihuixuaaa"
     },{
         title: "Leegal Blog",
         href: "http://blog.csdn.net/lyy_g"
-    },{
-        title: "Hux Blog",
-        href: "https://huangxuan.me/"
     },{
         title: "pmlpml",
         href: "http://blog.csdn.net/pmlpml"
