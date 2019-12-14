@@ -1,5 +1,6 @@
 # Tomy-Lee.github.io
-[![Build Status](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io.svg?branch=master)](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io)
+
+[![GitHub license](https://img.shields.io/github/license/Tomy-Lee/Tomy-Lee.github.io)](https://github.com/Tomy-Lee/Tomy-Lee.github.io/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/Tomy-Lee/Tomy-Lee.github.io)](https://github.com/Tomy-Lee/Tomy-Lee.github.io/issues) [![Build Status](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io.svg?branch=master)](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io)
 
 ### This is [My Blog](http://tomylijia.com).
 ### Thanks [Hux](https://github.com/Huxpro) for the theme.
