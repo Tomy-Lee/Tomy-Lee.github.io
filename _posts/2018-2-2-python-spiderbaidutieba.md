@@ -65,6 +65,7 @@ spider.get_page_html(3228287632)
 通过f12查看网页代码，找到标题、页码、正文内容等所在的代码段，然后进行提取并返回。
 ```python
         # 在html代码中找到帖子的标题
+	
 	def get_title(self, page_html):
 		title_pattern = re.compile('''<h1.*?>(.*?)</h1>''', re.S)
 		result = re.search(title_pattern, page_html)
@@ -73,6 +74,7 @@ spider.get_page_html(3228287632)
 		return None
 
 	# 在html代码中提取帖子的总页数
+	
 	def get_page_num(self, page_html):
 		page_num_pattern = re.compile('''回复贴，共.*?>(.*?)<''', re.S)
 		result = re.search(page_num_pattern, page_html)
@@ -81,6 +83,7 @@ spider.get_page_html(3228287632)
 		return None
 
 	# 从html代码中提取每层楼的内容
+	
 	def get_str_contents(self, page_html):
 		contents_pattern = re.compile('''d_post_content j_d_post_content  clearfix">(.*?)</div>''', re.S)
 		result = re.finditer(contents_pattern, page_html)
@@ -94,6 +97,7 @@ spider.get_page_html(3228287632)
 由于只有一个音频内容，我直接把整个的html代码复制过来进行了替换而没有匹配。
 ```python
         # 替换掉无关的字符串
+	
 	def replace(self, result):
 		str_contents = []
 		for content in result:
@@ -108,6 +112,7 @@ spider.get_page_html(3228287632)
 ### 5.文件操作，注意编码问题
 ```python
         # 打开txt文件
+	
 	def open_file(self, title):
 		if title:
 			self.file = open(title + ".txt", "w+", encoding="utf-8")
@@ -115,6 +120,7 @@ spider.get_page_html(3228287632)
 			self.file = open(self.default_title+ ".txt","w+", encoding="utf-8")
 
 	# 写入文件
+	
 	def write_file(self, str_contents):
 		for str_content in str_contents:
 			self.file.write("楼数：" + str(self.page_index) + "\n")
@@ -169,6 +175,7 @@ class BDTB:
 			return None
 
 	# 在html代码中找到帖子的标题
+	
 	def get_title(self, page_html):
 		title_pattern = re.compile('''<h1.*?>(.*?)</h1>''', re.S)
 		result = re.search(title_pattern, page_html)
@@ -177,6 +184,7 @@ class BDTB:
 		return None
 
 	# 在html代码中提取帖子的总页数
+	
 	def get_page_num(self, page_html):
 		page_num_pattern = re.compile('''回复贴，共.*?>(.*?)<''', re.S)
 		result = re.search(page_num_pattern, page_html)
@@ -185,6 +193,7 @@ class BDTB:
 		return None
 
 	# 从html代码中提取每层楼的内容
+	
 	def get_str_contents(self, page_html):
 		contents_pattern = re.compile('''d_post_content j_d_post_content  clearfix">(.*?)</div>''', re.S)
 		result = re.finditer(contents_pattern, page_html)
@@ -194,6 +203,7 @@ class BDTB:
 		return None
 
 	# 替换掉无关的字符串
+	
 	def replace(self, result):
 		str_contents = []
 		for content in result:
@@ -205,6 +215,7 @@ class BDTB:
 		return str_contents
 
 	# 打开txt文件
+	
 	def open_file(self, title):
 		if title:
 			self.file = open(title + ".txt", "w+", encoding="utf-8")
@@ -212,6 +223,7 @@ class BDTB:
 			self.file = open(self.default_title+ ".txt","w+", encoding="utf-8")
 
 	# 写入文件
+	
 	def write_file(self, str_contents):
 		for str_content in str_contents:
 			self.file.write("楼数：" + str(self.page_index) + "\n")
@@ -219,6 +231,7 @@ class BDTB:
 			self.page_index += 1
 
 	# 开始入口
+	
 	def start(self, question_num):
 		page_html = self.get_page_html(question_num, self.page_index)
 		title = self.get_title(page_html)
