@@ -48,7 +48,7 @@ tags:
 ![这里写图片描述](/img/cloudgoinout/qa4.jpg)
 
 #### 控制动作的AnimationLegacy部分如下：
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 using Com.mygame;
