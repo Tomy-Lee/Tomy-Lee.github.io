@@ -42,6 +42,7 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: rouge
 #   syntax_highlighter_opts:
 #     span:
 #       line_numbers: true
