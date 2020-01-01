@@ -212,11 +212,11 @@ func printOrWrite(args *selpgargs, line string, stdin io.WriteCloser) {}
 
 
 ### 1.help
-```
+```bash
 ./selpg -h
 ```
 
-```
+```bash
 Usage of ./selpg:
 
 ./selpg is a tool to select pages from what you want.
@@ -241,7 +241,7 @@ If no file specified, ./selpg will read input from stdin. Control-D to end.
 ### 2.some tests
 
 There is a text file named `test` and the content is 135 lines tests:
-```
+```bash
  test1
  test2
  test3
@@ -418,7 +418,7 @@ Then here are some commands to test the selpg.
 
 ## 代码：
 
-```
+```go
 package main
 
 import (
