@@ -17,7 +17,7 @@ tags:
 
 ---
 
-```
+```go
 package main
 
 import (
@@ -49,7 +49,7 @@ func main() {
 
 ---
 #### Interface类型的更通用定义可归纳如下：
-```
+```go
 type Namer interface {
     Method1(param_list) return_type
     Method2(param_list) return_type
@@ -64,7 +64,7 @@ type Namer interface {
 
 ---
 #### golang不支持完整的面向对象思想，没有继承，多态依赖接口实现。golang只能模拟继承，其本质是组合，但是golang语言提供了一些语法糖使其看起来达到了继承的效果。golang的设计理念大道至简，传统的继承概念在golang中已经显得不是那么必要，golang通过接口去实现多态。interface类型不包含任何数据成员。interface类型进行转换的时候，默认返回的是临时对象，所以如果需要对原始对象进行修改，需要获取原始对象的指针。下面是一个稍微复杂点的例子。
-```
+```go
 type IPizzaCooker interface {
     Prepare(*Pizza)
     Bake(*Pizza)
