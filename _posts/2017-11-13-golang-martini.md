@@ -21,7 +21,7 @@ go get github.com/codegangsta/martini
 可以使用如下的代码来测试我们安装的包是否可用：
 
 #### server.go
-```
+```go
 package main
 
 import "github.com/codegangsta/martini"
@@ -36,7 +36,7 @@ func main() {
 ```
 在命令行中输入下面的命令运行上面的代码：
 
-```
+```go
 go run server.go
 ```
 接下来可以使用如下的网址访问应用：
@@ -45,7 +45,7 @@ http://localhost:3000
 ---
 ### 三、API举例
 常量用于指定应用所处的环境：
-```
+```go
 const (
     Dev  string = "development"
     Prod string = "production"
@@ -53,20 +53,20 @@ const (
 )
 ```
 变量控制应用所处的环境：
-```
+```go
 var Env = Dev
 ```
 
 #### 1.type BeforeFunc
 
 BeforeFunc类型的方法在ResponseWriter方法被生效前调用。
-```
+```go
 type BeforeFunc func(ResponseWriter)
 ```
 
 #### 2.type ClassicMartini
 带有典型方法的Martini实例类型。
-```
+```go
 type ClassicMartini struct {
     *Martini
     Router
@@ -75,17 +75,17 @@ type ClassicMartini struct {
 
 #### 3.func Classic() *ClassicMartini
 使用这个方法创建一个典型的Martini实例。可以使用这个Martini实例来进行应用的管理：
-```
+```go
 func Classic() *ClassicMartini
 ```
 #### 4.type ReturnHandler
 ReturnHandler是Martini提供的用于路由处理并返回内容的服务。ReturnHandler对于向基于值传递的ResponseWriter写入是可响应的。
-```
+```go
 type ReturnHandler func(Context, []reflect.Value)
 ```
 #### 5.type Route
 Route是一个用于表示Martini路由层的接口。
-```
+```go
 type Route interface {
     // URLWith returns a rendering of the Route's url with the given string params.
     URLWith([]string) string
@@ -94,7 +94,7 @@ type Route interface {
 ```
 #### 6.type Router
 Router是Martini的路由接口。提供HTTP变量、处理方法栈、依赖注入。
-```
+```go
 type Router interface {
     // Get adds a route for a HTTP GET request to the specified matching pattern.
     Get(string, ...Handler) Route
@@ -123,13 +123,13 @@ type Router interface {
 
 #### 7.func NewRouter() Router
 创建一个路由实例。
-```
+```go
 func NewRouter() Router
 ```
 
 #### 8.type Routes
 Routes是Martini路由层的辅助服务。
-```
+```go
 type Routes interface {
     // URLFor returns a rendered URL for the given route. Optional params can be passed to fulfill named parameters in the route.
     URLFor(name string, params ...interface{}) string
