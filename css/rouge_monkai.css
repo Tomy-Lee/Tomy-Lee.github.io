@@ -188,36 +188,36 @@ highlight table td { padding: 5px; }
 div[class="highlight"] > pre > code[class*="language-"] {
   background:black;
   color:#f8f8f2;
-  font-size:18px;
+  font-size:15px;
 }
 div[class="highlight"] > pre {
   background:black;
-  font-size:18px;
+  font-size:15px;
 }
 figure[class="highlight"] > pre > code[class*="language-"] {
   text-align:left;
   background:black;
   color:#f8f8f2;
-  font-size:18px;
+  font-size:15px;
 }
 figure[class="highlight"] > pre > code[class*="language-"] td > pre{
   text-align:left;
   background:black;
   color:#f8f8f2;
-  font-size:18px;
+  font-size:15px;
 }
 figure[class="highlight"] > pre {
   text-align:left;
   background:black;
-  font-size:18px;
+  font-size:15px;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] > code{
   background:black;
   color:#f8f8f2;
-  font-size:18px;
+  font-size:15px;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] {
   background:black;
-  font-size:18px;
+  font-size:15px;
 }
 .lineno {color: #f8f8f2 } /*Number of line*/
