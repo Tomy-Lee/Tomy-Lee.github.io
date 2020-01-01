@@ -35,7 +35,8 @@ tags:
 一般来说，生产环境静态文件的访问交给 WEB 服务器 Apache / Lighttpd / Nginx 处理。在开发、测试阶段也可以让 net/http 库处理。
 
 server.go
-```
+
+```go
 package service
 
 import (
@@ -100,7 +101,7 @@ mx.PathPrefix 添加前缀路径路由。
 随着 web 页面技术的进步，页面中大量使用 javascript。 添加一个服务：
 
 apitest.go
-```
+```go
 package service
 
 import (
@@ -130,7 +131,7 @@ $ curl http://localhost:8080/api/test
 ```
 
 为了便于理解，课程给的案例非常简答。index.html 是
-```
+```html
 <html>
 <head>
   <link rel="stylesheet" href="css/main.css"/>
@@ -149,7 +150,7 @@ $ curl http://localhost:8080/api/test
 ```
 
 使用的 hello.js 是：
-```
+```js
 $(document).ready(function() {
     $.ajax({
         url: "/api/test"
@@ -166,14 +167,14 @@ $(document).ready(function() {
 
 #### 1.3 处理静态路径前缀
 在 web 应用中，部分应用会将所有静态文件访问路径用独立前缀，例如： `http://localhost:8080/static/js/hello.js`，这时路由如何设置呢？
-```
+```js
 mx.PathPrefix("/static").Handler(http.FileServer(http.Dir(webRoot + "/assets/")))
 ```
 
 显然，404 页面出现了。
 
 正确的代码是：
-```
+```js
 mx.PathPrefix("/static").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(webRoot+"/assets/"))))
 ```
 
@@ -182,7 +183,7 @@ mx.PathPrefix("/static").Handler(http.StripPrefix("/static/", http.FileServer(ht
 如果你仅是打算输出 html 页面，github.com/unrolled/render 是最为简单和直接。
 
 srver.go
-```
+```go
 package service
 
 import (
@@ -238,7 +239,7 @@ func initRoutes(mx *mux.Router, formatter *render.Render) {
 
 我们在当前目录下，建立了 `assets` 和 `templates` 目录。 `index.html` 在 `templates` 目录中。
 
-```
+```html
 <html>
 <head>
   <link rel="stylesheet" href="css/main.css"/>
@@ -257,7 +258,7 @@ func initRoutes(mx *mux.Router, formatter *render.Render) {
 其中 {{.}} 表示数据填充位置。 {{.ID}} 表示该数据的 ID 属性。
 
 home.go 处理了数据填充。
-```
+```go
 package service
 
 import (
@@ -287,7 +288,7 @@ func homeHandler(formatter *render.Render) http.HandlerFunc {
 
 #### 2.2 使用text/template库
 golang 提供了强大的 template 库，上述 Render 仅是它的简单包装。 官网的例子也非常简单：
-```
+```go
 type Inventory struct {
     Material string
     Count    uint
