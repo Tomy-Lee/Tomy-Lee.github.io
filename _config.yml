@@ -71,7 +71,7 @@ gitalk_clientID: 4abc5e10d70c776bf952
 gitalk_clientSecret: 0f99682605bd295411c894f4a8a42314d9de9d9d
 
 # Baidu Analytics
-ba_track_id: 6858702ae375439b53fbacfb58361115
+ba_track_id: 0abb9f37589e32fffcc4c70ef23139a2
 
 
 ga_track_id: 'UA-110933268-1'            # Format: UA-xxxxxx-xx
