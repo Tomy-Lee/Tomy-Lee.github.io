@@ -8,6 +8,8 @@ http://www.tomylijia.com/archive/
 
 http://www.tomylijia.com/tags/
 
+http://www.tomylijia.com/2020/01/07/boyermoore/
+
 http://www.tomylijia.com/2019/11/25/cai-paper/
 
 http://www.tomylijia.com/2019/11/17/aaai20/
