@@ -43,12 +43,12 @@ markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#      span:
-#        line_numbers: true
-#      block:
-#        line_numbers: true
-#        start_line: 1
+  syntax_highlighter_opts:
+     span:
+       line_numbers: true
+     block:
+       line_numbers: true
+       start_line: 1
 
 
 # Disqus settings
