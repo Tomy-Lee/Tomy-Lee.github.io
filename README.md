@@ -2,6 +2,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/Tomy-Lee/Tomy-Lee.github.io)](https://github.com/Tomy-Lee/Tomy-Lee.github.io/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/Tomy-Lee/Tomy-Lee.github.io)](https://github.com/Tomy-Lee/Tomy-Lee.github.io/issues) [![Build Status](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io.svg?branch=master)](https://travis-ci.org/Tomy-Lee/Tomy-Lee.github.io)
 
+## 2020.11.1 因学业与即将工作等原因，暂时停止更新和维护。
+
 ### This is [My Blog](http://tomylijia.com).
 ### Thanks [Hux](https://github.com/Huxpro) for the theme.
 
